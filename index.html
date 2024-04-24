@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -17,15 +17,27 @@
                  <button id="add-button" onclick="addTask()" >Add</button>
              </div>
              <ul id="list-container">
-                <li class="checked">Task 1</li>
+                <!-- <li class="checked">Task 1</li>
                 <li>Task 2</li>
-                <li>Task 3</li>
+                <li>Task 3</li> -->
             </ul>
             <button class="clear" id="Clear-todo">Clear items</button>
+            <div class="buttons">
+                <button class="completed" id="showw" onclick="showCompleted()">completed</button>
+                <button class="uncompleted"  onclick="showUncompleted()">uncompleted</button>
+                <button class="all"  onclick="showAll()">All</button>
+            </div>
+            <!-- where the completed tasks will be displayed -->
+            <ul  id="list-container">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+
         </div>
     </div>
+    <div>
 
-    
+    <script src="./script.js"></script>
 </body>
-<script src="./indexx.js"></script>
 </html>
